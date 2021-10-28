@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>Tente abrir o site em varios disposetivos diferentes </p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reprduzir audio</h1>
+<p>Vamos aprender a reproduzir audio</p>
+<!-- <audio src="media/alsina.mp3" controls autoplay></audio> --> <!-- não são todos navegadores que suportam nesse formato-->
+
+<audio preload="metadata" autoplay controls loop>
+    <source src="media/alsina.mp3" type="audio/mpeg">
+    <source src="media/alsina.ogg" type="audio/ogg">
+    <source src="media/august.wav" type="audio/wav"> <!-- Nao recomendo esse formato torna o audio pesado-->
+
+    <p>Infelizmente seu navegador nao consegue reproduzir áudio. <a href="media/alsina.mp3">Clique aquui para baixar o aruivo</a></p>
+</audio> 
+
+</body>
+</html>
